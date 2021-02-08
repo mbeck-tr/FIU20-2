@@ -6,6 +6,7 @@ namespace Polymorphie
     {
         static void Main(string[] args)
         {
+            //Beispiel für Polymorphie
             Giraffe giraffe = new Giraffe() { Name = "Hans" };
             Adler adler = new Adler() { Name = "Peter" };
 
