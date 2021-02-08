@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiederholung", "Wiederholun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphie", "Polymorphie\Polymorphie.csproj", "{E1B317C4-3D9B-412F-B228-38ED18884714}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GeoObjekte", "GeoObjekte", "{46014581-7CF5-471C-BBA7-BE25F19BE0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometrischeObjekteBibliothek", "GeometrischeObjekte\GeometrischeObjekteBibliothek.csproj", "{41B0DF56-7F82-4773-A65E-5930EBD263A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometrischeObjekteKonsole", "GeometrischeObjekteKonsole\GeometrischeObjekteKonsole.csproj", "{64C6C5F5-B2D9-405E-87AB-95DE8D54557D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +25,23 @@ Global
 		{E1B317C4-3D9B-412F-B228-38ED18884714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1B317C4-3D9B-412F-B228-38ED18884714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1B317C4-3D9B-412F-B228-38ED18884714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41B0DF56-7F82-4773-A65E-5930EBD263A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B0DF56-7F82-4773-A65E-5930EBD263A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B0DF56-7F82-4773-A65E-5930EBD263A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B0DF56-7F82-4773-A65E-5930EBD263A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C6C5F5-B2D9-405E-87AB-95DE8D54557D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C6C5F5-B2D9-405E-87AB-95DE8D54557D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C6C5F5-B2D9-405E-87AB-95DE8D54557D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C6C5F5-B2D9-405E-87AB-95DE8D54557D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E1B317C4-3D9B-412F-B228-38ED18884714} = {D7204A57-B8A3-4480-97AD-7F35B2FE0CA6}
+		{46014581-7CF5-471C-BBA7-BE25F19BE0F0} = {D7A4574C-9649-498D-9E5C-DE1CCB6B049D}
+		{41B0DF56-7F82-4773-A65E-5930EBD263A1} = {46014581-7CF5-471C-BBA7-BE25F19BE0F0}
+		{64C6C5F5-B2D9-405E-87AB-95DE8D54557D} = {46014581-7CF5-471C-BBA7-BE25F19BE0F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {529990B0-C153-4ECB-8EA1-5717C34ED9DD}
