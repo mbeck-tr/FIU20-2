@@ -4,13 +4,19 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteLib
 {
     public class GeoObject //Basisklasse
     {
-        public string Name { get; set; }
-        public Location location { get; set; } = new Location();
-
-        //Konstruktor
-        public GeoObject()
+        static int _count;
+        static public int Count
         {
-            location = new Location();
+            get { return _count; }
+            protected set { _count = value; } //Zugriff innerhalb der Vererbungshierachie
+        }
+        public Point Location;
+        public string Name { get; set; }
+
+        public override string ToString()
+        {
+            string s = Name + "\nLocation: " + Location.ToString();
+            return s;
         }
     }
 }
@@ -18,12 +24,12 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteLib
 
 /* ^Y
  * |
- * |
- * |  +----------+
- * |  |          |
- * |  |          |
- * |  |          |
- * |  +----------+
- * |
+ * |  D              C --> _c
+ * |  +--------------+            +
+ * |  |              |           /
+ * |  |              |          /
+ * |  |              |         /
+ * |  +--------------+        +    
+ * |  A-->Location   B(Property) return B berechnen
  * +---------------------->X
  */
