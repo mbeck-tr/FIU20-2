@@ -16,7 +16,6 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteLib
 
         //Felder
         private float _radius;
-        private int _anzahlKreise;
 
         //Eigenschaften
         public Point MP
@@ -27,7 +26,11 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteLib
         public float Radius
         {
             get { return _radius; }
-            set { _radius = value; }
+            set {
+                if (value > 0)
+                    _radius = value;
+                else throw new InvalidMeasureException("Fehler: Der Radius darf nicht negativ oder Null sein!");
+            }
         }
         public float Area
         {

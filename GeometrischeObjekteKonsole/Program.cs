@@ -7,6 +7,44 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteKonsole
     {
         static void Main(string[] args)
         {
+            float rad;
+            rad = Convert.ToSingle(Console.ReadLine());
+            Circle c;
+            try
+            {
+                c = new Circle(10,10,rad,"MeinKreis");
+                Console.WriteLine("Kreis erzeugt!");
+                int a = 0;
+                Console.WriteLine(1/a);
+            }
+            catch(InvalidMeasureException ex)
+            {
+                Console.WriteLine("Invalid Measure Exception:");
+                Console.WriteLine(ex.Message);
+                Console.ReadKey();
+                return;
+            }
+            catch(DivideByZeroException ex)
+            {
+                Console.WriteLine("Divide by Zero:");
+                Console.WriteLine(ex.Message);
+                Console.ReadKey();
+                return;
+            }
+            catch(Exception exception)
+            {
+                Console.WriteLine("Common Exception:");
+                Console.WriteLine(exception.Message);
+                Console.ReadKey();
+                return;
+            }
+            finally
+            {
+                Console.WriteLine("wird immer ausgeführt!!! zum Beispiel zum Schließen von Streams");
+            }
+            Console.WriteLine(c);
+            Console.ReadLine();
+
             GeoObject[] geoObjectList = new GeoObject[10];
             Auswahlmenu();
             Console.WriteLine("Hallo GeoObjekte");
@@ -30,7 +68,6 @@ namespace LutzundGrub.GeoObjekte.GeometrischeObjekteKonsole
             Console.WriteLine();
             Console.WriteLine(l1);
             Console.WriteLine(l1.Length);
-            
         }
 
         private static void Auswahlmenu()
