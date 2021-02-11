@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <RootNamespace>LutzundGrub.GeoObjekte.GeometrischeObjekteWinForms</RootNamespace>
+    <AssemblyName>GeometrischeObjekteWinForms</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeometrischeObjekte\GeometrischeObjekteBibliothek.csproj" />
+  </ItemGroup>
+  
+</Project>
